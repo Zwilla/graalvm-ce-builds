@@ -74,6 +74,7 @@ Now you will see a line like this:
 * `export JAVA_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-19.3.0/Contents/Home`
 * `export PATH=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-19.3.0/Contents/Home/bin/:$PATH`
 * `/usr/libexec/java_home -v 11.0.5` (set this if GraalVM is 11.0.5, check with: `/usr/libexec/java_home -V` )
+* `export LLVM_TOOLCHAIN=$(lli --print-toolchain-path)`
 * double check path: `echo $PATH` (fix it if needed)
 * set exports into zsh and bash profile [see troubleshooting](#troubleshooting-choose-runtime)
 
@@ -81,16 +82,26 @@ Now you will see a line like this:
 ``export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.5)
 export PATH=/Users/${whoami}/GraalVM/graal/mx:$PATH
 export GRAALVM_DIR=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-19.3.0/Contents/Home
-export PATH=$GRAALVM_DIR:$JAVA_HOME/bin:$PATH``
+export PATH=$GRAALVM_DIR:$JAVA_HOME/bin:$PATH
+export LLVM_TOOLCHAIN=$(lli --print-toolchain-path)``
 
 * fck: no idea at moment to run without a new re/login you need to run this: `source ~/.zsh`
 
 ## Install GraalVM
 
+* some Oneliners
+`wget -O - https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/native-image-installable-svm-java11-darwin-amd64-19.3.0.2.jar | gu -L install llvm-toolchain-installable-java11-darwin-amd64-19.3.0.2.jar`
+`wget -O - https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/llvm-toolchain-installable-java11-darwin-amd64-19.3.0.2.jar | gu -L install llvm-toolchain-installable-java11-darwin-amd64-19.3.0.2.jar`
+
 * []()
 * open your Terminal.app
 * gu -L install llvm-toolchain-installable-java11-darwin-amd64-19.3.0.jar
+
 * gu install native-image
+* gu install R
+* gu install python
+* gu install ruby
+* gu install llvm-toolchain
 
 ## Cool Stuff
 * [https://quarkus.io/guides/building-native-image](https://quarkus.io/guides/building-native-image)
