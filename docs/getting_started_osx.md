@@ -79,7 +79,7 @@ Now you will see a line like this:
 * set exports into zsh and bash profile [see troubleshooting](#troubleshooting-choose-runtime)
 
 * my `sudo vi  ~/.bash_profile`
-``export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.5)
+```export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.5)
 export PATH=/Users/${whoami}/GraalVM/graal/mx:$PATH
 export GRAALVM_DIR=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-19.3.0/Contents/Home
 export PATH=$GRAALVM_DIR:$JAVA_HOME/bin:$PATH
