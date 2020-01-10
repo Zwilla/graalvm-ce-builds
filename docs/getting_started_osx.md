@@ -89,9 +89,9 @@ Now you will see a line like this:
 
 `export PATH=$GRAALVM_DIR:$JAVA_HOME/bin:$PATH`
 
-`export LLVM_TOOLCHAIN=$(lli --print-toolchain-path)`
+`export LLVM_TOOLCHAIN=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-19.3.0/Contents/Home/languages/llvm/native/bin`
 
-* fck: no idea at moment to run without a new re/login you need to run this: `source ~/.zsh`
+* fck: no idea at moment to run without a new re/login you need to run this: `source ~/.zsh` or/ and `source ~/.bash_profile`
 
 ## Install GraalVM
 
