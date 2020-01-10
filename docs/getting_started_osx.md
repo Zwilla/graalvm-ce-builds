@@ -5,6 +5,7 @@
 * [TroubleShooting 'Choose Runtime'](#troubleshooting-choose-runtime)
 * [Use Oracle Native-Image at OSX Catalina](#use-oracle-native-image-at-osx-catalina)
 * [Exports](#exports)
+* [Some Cool Suff](#cool-staff)
 
 ____
 
@@ -89,6 +90,10 @@ export PATH=$GRAALVM_DIR:$JAVA_HOME/bin:$PATH``
 * open your Terminal.app
 * gu -L install llvm-toolchain-installable-java11-darwin-amd64-19.3.0.jar
 * gu install native-image
+
+## Cool Stuff
+* [https://quarkus.io/guides/building-native-image](https://quarkus.io/guides/building-native-image)
+* [https://github.com/quarkusio/quarkus-quickstarts.git](https://github.com/quarkusio/quarkus-quickstarts.git)
 
 
 
