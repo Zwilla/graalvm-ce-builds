@@ -5,7 +5,7 @@
 * [TroubleShooting 'Choose Runtime'](#troubleshooting-choose-runtime)
 * [Use Oracle Native-Image at OSX Catalina](#use-oracle-native-image-at-osx-catalina)
 * [Exports](#exports)
-* [Some Cool Suff](#cool-staff)
+* [Cool Stuff](#cool-stuff)
 
 ____
 
