@@ -83,14 +83,17 @@ Now you will see a line like this:
 export PATH=/Users/${whoami}/GraalVM/graal/mx:$PATH
 export GRAALVM_DIR=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-19.3.0/Contents/Home
 export PATH=$GRAALVM_DIR:$JAVA_HOME/bin:$PATH
-export LLVM_TOOLCHAIN=$(lli --print-toolchain-path)``
+export LLVM_TOOLCHAIN=$(lli --print-toolchain-path)```
 
 * fck: no idea at moment to run without a new re/login you need to run this: `source ~/.zsh`
 
 ## Install GraalVM
 
 * some Oneliners
+
 `wget -O - https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/native-image-installable-svm-java11-darwin-amd64-19.3.0.2.jar | gu -L install llvm-toolchain-installable-java11-darwin-amd64-19.3.0.2.jar`
+
+
 `wget -O - https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-19.3.0.2/llvm-toolchain-installable-java11-darwin-amd64-19.3.0.2.jar | gu -L install llvm-toolchain-installable-java11-darwin-amd64-19.3.0.2.jar`
 
 * []()
